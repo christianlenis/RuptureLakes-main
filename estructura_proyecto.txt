@@ -1,0 +1,104 @@
+./
+RuptureLakes-main/
+  - .env.docker.example
+  - .gitignore
+  - Dockerfile
+  - README.md
+  - __init__.py
+  - docker-compose.yml
+  - initialization.py
+  - requirements.txt
+RuptureLakes-main/src/
+    - __init__.py
+    - main.py
+RuptureLakes-main/src/functions/
+      - __init__.py
+      - conect.py
+      - events.py
+      - modelos.py
+      - users.py
+RuptureLakes-main/src/models/
+      - __init__.py
+      - conect.py
+      - eventos.py
+      - users.py
+RuptureLakes-main/src/scripts/
+      - __init__.py
+      - conect.py
+      - editEventsCollection.py
+      - editUserCollection.py
+RuptureLakes-main/src/web/
+      - __init__.py
+      - routes.py
+RuptureLakes-main/src/web/static/
+RuptureLakes-main/src/web/static/css/
+          - 404.css
+          - buscar.css
+          - creado.css
+          - creado_admin.css
+          - crear_admin.css
+          - crear_usuario.css
+          - editar.css
+          - evento.css
+          - index - copia.css
+          - index.css
+          - main_styles.css
+          - olvide_contra.css
+          - principal.css
+          - recuperar.css
+          - reporte.css
+          - resta_enviado.css
+          - restablecido.css
+          - resultados.css
+          - style.css
+          - verificar.css
+RuptureLakes-main/src/web/static/images/
+          - Fondo.png
+          - fugas_logo-200h.png
+          - fugas_logo_blanco-200h.png
+          - tube_circ-200h.png
+          - tube_flujo1-200h.png
+          - tube_flujo2-200h.png
+          - tube_flujo3-200h.png
+          - tube_linea-200h.png
+          - tube_total-200h.png
+RuptureLakes-main/src/web/static/images/logos/
+            - Genergetica_blanco.png
+            - Logo_Gasostenible.png
+            - Logo_Genergetica.png
+            - Logo_UTP.png
+            - RL_logo.png
+            - UTP_blanco.png
+            - logo-taturgas.png
+RuptureLakes-main/src/web/static/public/
+          - Logo genergetica blanco.png
+          - UTP_blanco.png
+          - fugas_logo_blanco-200h.png
+          - tube_circ-200h.png
+          - tube_cuad-200h.png
+          - tube_elip-200h.png
+          - tube_flujo1-200h.png
+          - tube_flujo2-200h.png
+          - tube_flujo3-200h.png
+          - tube_linea-200h.png
+          - tube_total-200h.png
+          - tube_trian-200h.png
+RuptureLakes-main/src/web/templates/
+        - administracion.html
+        - buscar.html
+        - carga_masiva.html
+        - creado.html
+        - creado_admin.html
+        - crear_admin.html
+        - crear_usuario.html
+        - editar.html
+        - evento.html
+        - index.html
+        - olvide_contra.html
+        - principal.html
+        - recuperar.html
+        - reporte.html
+        - resta_enviado.html
+        - restablecido.html
+        - resultados.html
+        - verificar.html

@@ -1,0 +1,33 @@
+# docker-compose.yml (Compose v2 ya no requiere 'version')
+services:
+  mongodb_efigas:
+    image: mongo:5.0
+    container_name: rupture_mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+    volumes:
+      - ${MONGO_DATA_PATH}:/data/db
+
+  flask_app:
+    build: .
+    container_name: rupture_flask_app
+    restart: unless-stopped
+    working_dir: /app/src
+    command: ["python", "main.py"]   # <-- SOLO UNA VEZ
+    depends_on:
+      - mongodb_efigas
+    ports:
+      - "${FLASK_PORT}:${FLASK_PORT}"
+    environment:
+      FLASK_HOST: ${FLASK_HOST}
+      FLASK_PORT: ${FLASK_PORT}
+      FLASK_DEBUG: ${FLASK_DEBUG}
+      MONGO_HOST: ${MONGO_HOST}
+      MONGO_PORT: ${MONGO_PORT}
+      MONGO_USERNAME: ${MONGO_USERNAME}
+      MONGO_PASSWORD: ${MONGO_PASSWORD}
+      MONGO_DATABASE: ${MONGO_DATABASE}
